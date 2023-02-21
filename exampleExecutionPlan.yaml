@@ -1,0 +1,13 @@
+name: SomeExecutionPlan
+assignments:
+  - message-type: ValidateInputUnit
+    workplace-regex: .*
+preset-variables:
+  - name: someVariable
+    value: someValue
+activities:
+  - name: GetWorkplaceReservationFromFabNet
+    mapper: DefaultMapper
+    static-arguments:
+      - name: someStaticArgument
+        value: someStaticValue
