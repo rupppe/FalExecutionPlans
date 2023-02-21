@@ -1,4 +1,6 @@
 name: SomeExecutionPlan
+system-plan: false
+desciption: Some plan for testing
 assignments:
   - message-type: ValidateInputUnit
     workplace-regex: .*
@@ -8,6 +10,7 @@ preset-variables:
 activities:
   - name: GetWorkplaceReservationFromFabNet
     mapper: DefaultMapper
+    execution-index: 0
     static-arguments:
       - name: someStaticArgument
         value: someStaticValue
